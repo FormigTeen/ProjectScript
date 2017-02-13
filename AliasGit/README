@@ -1,0 +1,11 @@
+Estrutura do Alias no Git:
+
+	git config --global alias.co checkout
+
+	git config --global alias.unstage 'reset HEAD --' | git unstage fileA == git reset HEAD fileA
+
+	git config --global alias.last 'log -1 HEAD'
+
+Para Ferramentas Externas, usa-se '!' antes do comando:
+
+	git config --global alias.visual '!gitk'
