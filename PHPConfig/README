@@ -1,0 +1,11 @@
+#Instalando e Configurando o PHP#
+
+##Instale todas as Ferramentas Necessarias##
+
+	sudo apt install php7.0* apache2 libapache2-mod-php7.0 mysql-server
+
+##Altere o arquivo php.ini para Gerar Erros##
+
+	display_erros = On
+
+
