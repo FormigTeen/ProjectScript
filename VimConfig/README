@@ -1,0 +1,9 @@
+#Configurar o Vim como Editor Padrão do Terminal no ~/.bashrc#
+
+	export EDITOR=vim
+	export VISUAL=vim
+
+#Configurar a Entrada Padrao de Texto do Terminal no ~/inputrc#
+
+	set editing-mode vi
+	set keymap vi-command 
