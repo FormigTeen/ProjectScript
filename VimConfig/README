@@ -7,3 +7,17 @@
 
 	set editing-mode vi
 	set keymap vi-command 
+
+#Configurar o Folding do Vim no ~/.vimrc#
+
+  	set foldmethod=syntax
+
+#Configurar Numero de Linha do Vim no ~/.vimrc#
+
+	:set number
+	:set relativenumber
+
+#Configurar Folding Syntax do HTML do Vim no ~/.vim/after/syntax/html.vim#
+
+	syntax region htmlFold start="<\z(\<\(area\|base\|br\|col\|command\|embed\|hr\|img\|input\|keygen\|link\|meta\|para\|source\|track\|wbr\>\)\@![a-z-]\+\>\)\%(\_s*\_[^/]\?>\|\_s\_[^>]*\_[^>/]>\)" end="</\z1\_s*>" fold transparent keepend extend containedin=htmlHead,htmlH\d
+
