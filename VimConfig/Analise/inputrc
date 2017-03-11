@@ -8,14 +8,14 @@ set show-all-if-ambiguous on
 set completion-ignore-case on
 # on menu-complete, first display the common prefix, then cycle through the 
 # options when hitting TAB
-menu-complete-display-prefix on
+set menu-complete-display-prefix on
 
 ###########################################################
 # Keymaps for when we're in command mode (e.g., after hitting ESC)
 set keymap vi-command
 
 # Insert the arguments from the last command
-"p": "i !!*\r"
+"p": "i !!\r"
 
 # When hitting option-up/option-down, cycle through the previous commands
 # which start with the prefix you've entered, rather than just cycling through
@@ -25,8 +25,8 @@ set keymap vi-command
 # "\033\033[B".
 # Feel free to bind to whatever you want. Delete the first '\e' in the keymap
 # to set plain up/down to do a history search by default.
-"\e\e[A": history-search-backward
-"\e\e[B": history-search-forward
+"H": history-search-backward
+"L": history-search-forward
 
 ###########################################################
 # Keymaps for when we're in insert (i.e., typing stuff in) mode
@@ -36,11 +36,7 @@ set keymap vi-insert
 # again will cycle through available completions.
 TAB: menu-complete
 # Shift-TAB cycles completions backward
-"\e[Z": menu-complete-backward
-
-# Option-up/option-down should also apply to insert mode
-"\e\e[A": history-search-backward
-"\e\e[B": history-search-forward
+Shift-TAB: menu-complete-backward
 
 # Needed because binding 'p' in command mode above wipes its insert mode # function, too. This fixes that, and will insert 'p' when you type 'p'.
 "p": self-insert
