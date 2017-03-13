@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/matheus/.vim/after/syntax/html.vim'
+let g:netrw_dirhist_2='/var/www/html'
+let g:netrw_dirhist_3='/home/matheus/Documents/Ideias/TreinamentoInfo/PHP&SQL Specific'
