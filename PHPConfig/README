@@ -7,5 +7,6 @@
 ##Altere o arquivo php.ini para Gerar Erros##
 
 	display_erros = On
-
-
+	log_errors = On
+	ignore_repeated_errors = On
+	html_errors = On

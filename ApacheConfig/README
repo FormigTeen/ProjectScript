@@ -1,0 +1,20 @@
+#Libere Permissões para Edições na Pasta do Apache (localhost)#
+
+	chmod -R 765 /var/www/html
+
+#Peça a Reescrita do Arquivo de Configuração#
+
+	a2enmod rewrite
+
+#Adicione abaixo da Linha "DocumentRoot "/var/www/html" no arquivo /etc/apache2/sites-available/000-default.conf#
+
+	<Directory "/var/www/html">
+	    AllowOverride All
+	</Directory>
+
+#Adicione no Arquivo /etc/apache2/apache2.conf#
+
+	#Include phpMyAdmin
+	Include /etc/phpmyadmin/apache.conf
+
+

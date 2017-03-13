@@ -36,4 +36,4 @@ set keymap vi-insert
 # again will cycle through available completions.
 TAB: menu-complete
 # Shift-TAB cycles completions backward
-Shift-TAB: menu-complete-backward
+"\e[Z": menu-complete-backward
