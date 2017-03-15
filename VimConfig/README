@@ -35,3 +35,7 @@
 	:let php_sql_query = 1
 	:let php_noShortTags = 1
 
+#Configurar o phpMyAdmin em /etc/phpmyadmin/Config.inc.php#
+
+    $cfg['Servers'][$i]['auth_type'] = 'config';
+	$cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
