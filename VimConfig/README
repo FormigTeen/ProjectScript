@@ -39,3 +39,8 @@
 
     $cfg['Servers'][$i]['auth_type'] = 'config';
 	$cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
+
+#Ativar o OmniComplete no ~/.vimrc#
+
+	:filetype plugin on
+	:set omnifunc=syntaxcomplete#Complete
