@@ -12,3 +12,6 @@
 :let php_noShortTags = 1 
 :filetype plugin on
 :set omnifunc=syntaxcomplete#Complete
+:set completeopt=longest,menuone
+:set completeopt+=preview
+
