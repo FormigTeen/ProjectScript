@@ -46,3 +46,7 @@
 	:set omnifunc=syntaxcomplete#Complete
 	:set completeopt=longest,menuone
 	:set completeopt+=preview
+
+#Instalar o T-Mux e o XClip
+
+	sudo apt install tmux xclip -y
